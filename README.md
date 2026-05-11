@@ -116,8 +116,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 📧 Contato
 
-* Nome: Seu Nome
-* Email: [seuemail@email.com](mailto:seuemail@email.com)
-* GitHub: [https://github.com/seu-usuario](https://github.com/seu-usuario)
+* Nome: Joaquim
+* GitHub: [https://github.com/seu-usuario](https://github.com/J-Luiz2)
 
 ---
