@@ -2,4 +2,8 @@ requisitos
 
 
 
+<<<<<<< HEAD
 RF10 - O sistema deve aceitar PIX.
+=======
+RF10 - O sistema deve calcular frete via CEP.
+>>>>>>> e5c9470c19f53a184e0b4f3bf3cf3c93fe1b316b
