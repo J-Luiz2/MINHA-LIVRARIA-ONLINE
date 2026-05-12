@@ -156,3 +156,18 @@ btnFinalizar.addEventListener('click', () => {
   renderizarCarrinho();
   fechar();
 });
+
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+
+    // Só age em links internos (que começam com #)
+    if (href.startsWith('#') && href.length > 1) {
+      e.preventDefault();
+      const destino = document.querySelector(href);
+      if (destino) {
+        destino.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
