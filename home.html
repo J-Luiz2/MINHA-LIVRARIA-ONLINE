@@ -1,63 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Livraria Online</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Livraria Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">📚 Minha Livraria</div>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="logo">📚 Minha Livraria</div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#livros">Livros</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="btn-carrinho" id="btnCarrinho">
+      🛒 Carrinho <span class="carrinho-count" id="carrinhoCount">0</span>
+    </button>
+  </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#livros">Livros</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Descubra novos mundos<br>através da leitura</h1>
+      <p>Os melhores livros com preços incríveis.</p>
+      <button id="btnExplorar" class="btn-hero">Explorar Livros</button>
+    </div>
+  </section>
 
-    <section class="hero">
-        <h1>Descubra novos mundos através da leitura</h1>
-        <p>Os melhores livros com preços incríveis.</p>
-        <button id="btnExplorar">Explorar Livros</button>
-    </section>
+  <!-- LIVROS -->
+  <section id="livros" class="livros">
+    <h2>Livros em Destaque</h2>
+    <p class="livros-sub">Escolha um clássico e comece sua jornada</p>
 
-    <section id="livros" class="livros">
-        <h2>Livros em Destaque</h2>
+    <div class="cards">
 
-        <div class="cards">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600" alt="Livro 1">
-                <h3>Dom Casmurro</h3>
-                <p>Machado de Assis</p>
-                <span>R$ 39,90</span>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=600" alt="Livro 2">
-                <h3>O Pequeno Príncipe</h3>
-                <p>Antoine de Saint-Exupéry</p>
-                <span>R$ 29,90</span>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=600" alt="Livro 3">
-                <h3>1984</h3>
-                <p>George Orwell</p>
-                <span>R$ 44,90</span>
-            </div>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600" alt="Dom Casmurro">
+          <span class="card-tag">Clássico</span>
         </div>
-    </section>
+        <div class="card-body">
+          <h3>Dom Casmurro</h3>
+          <p class="autor">Machado de Assis</p>
+          <div class="card-footer">
+            <span class="preco">R$ 39,90</span>
+            <button class="btn-comprar" data-nome="Dom Casmurro" data-preco="39.90">+ Carrinho</button>
+          </div>
+        </div>
+      </div>
 
-    <footer id="contato">
-        <p>© 2026 Minha Livraria Online - Todos os direitos reservados.</p>
-    </footer>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=600" alt="O Pequeno Príncipe">
+          <span class="card-tag">Infantil</span>
+        </div>
+        <div class="card-body">
+          <h3>O Pequeno Príncipe</h3>
+          <p class="autor">Antoine de Saint-Exupéry</p>
+          <div class="card-footer">
+            <span class="preco">R$ 29,90</span>
+            <button class="btn-comprar" data-nome="O Pequeno Príncipe" data-preco="29.90">+ Carrinho</button>
+          </div>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=600" alt="1984">
+          <span class="card-tag">Distopia</span>
+        </div>
+        <div class="card-body">
+          <h3>1984</h3>
+          <p class="autor">George Orwell</p>
+          <div class="card-footer">
+            <span class="preco">R$ 44,90</span>
+            <button class="btn-comprar" data-nome="1984" data-preco="44.90">+ Carrinho</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="sobre-content">
+      <div class="sobre-texto">
+        <h2>Sobre a Livraria</h2>
+        <p>Somos uma livraria online apaixonada por conectar leitores aos livros certos. Nosso catálogo reúne clássicos da literatura, best-sellers e obras independentes com curadoria especial.</p>
+        <p>Fundada em 2024, nascemos da vontade de tornar a leitura mais acessível e prazerosa para todos.</p>
+        <div class="sobre-stats">
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Títulos</span>
+          </div>
+          <div class="stat">
+            <strong>1.2k</strong>
+            <span>Clientes</span>
+          </div>
+          <div class="stat">
+            <strong>4.9★</strong>
+            <span>Avaliação</span>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-img">
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=800" alt="Estante de livros">
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRINHO (modal) -->
+  <div class="carrinho-overlay" id="carrinhoOverlay">
+    <div class="carrinho-modal">
+      <div class="carrinho-header">
+        <h3>🛒 Seu Carrinho</h3>
+        <button class="fechar-carrinho" id="fecharCarrinho">✕</button>
+      </div>
+      <ul class="carrinho-lista" id="carrinhoLista">
+        <li class="carrinho-vazio">Nenhum livro adicionado ainda.</li>
+      </ul>
+      <div class="carrinho-total">
+        <span>Total:</span>
+        <strong id="carrinhoTotal">R$ 0,00</strong>
+      </div>
+      <button class="btn-finalizar" id="btnFinalizar">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="contato">
+    <p>© 2026 Minha Livraria Online — Todos os direitos reservados.</p>
+    <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.5;">Feito com ❤️ por Nicolas Cavalcante</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
